@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   get '/search', to: 'home#search'
 
-  # resources :movies, only: [:create]
+  resources :movies, only: [:create]
 end
