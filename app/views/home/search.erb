@@ -1,0 +1,9 @@
+<h1>Search Results</h1>
+
+<% @movies.each do |movie| %>
+  <div>
+    <%= movie.title %>
+    <%= image_tag "#{@base_url}#{@small_logo_size}#{movie.poster_path}" %>
+    <span><%= link_to "Add Movie", movies_path(movie_id: movie.id), :method => :post%></span>    
+  </div> 
+<% end %>

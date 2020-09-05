@@ -1,0 +1,6 @@
+<h1>Welcome to Movie Ranker!</h1>
+
+<%= form_tag(search_path, method: :get) do %> 
+  <%= text_field_tag(:search, params[:search]) %>
+  <%= submit_tag ('Search') %>
+<% end %>
