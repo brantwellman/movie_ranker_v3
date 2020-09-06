@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+  before_action :authenticate_user!
+
   def create
     tmdb_id = params[:id]
     movie = Tmdb::Movie.detail(tmdb_id)
