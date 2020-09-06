@@ -30,12 +30,20 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'figaro'
-gem 'themoviedb-api'
-gem 'pry', '~> 0.12.2'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+# Key management
+gem 'figaro'
+# Movied DB api wrapper
+gem 'themoviedb-api'
+# Development troubleshooting
+gem 'pry', '~> 0.12.2'
+# Authentication
+gem 'devise', '~> 4.7', '>= 4.7.2'
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 4.0.1'
