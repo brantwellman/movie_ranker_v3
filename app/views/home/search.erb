@@ -4,6 +4,6 @@
   <div>
     <%= movie.title %>
     <%= image_tag "#{Movie::BASE_URL}#{Movie::SMALL_LOGO}#{movie.poster_path}" %>
-    <span><%= link_to "Add Movie", movies_path(movie_id: movie.id), :method => :post%></span>    
+    <span><%= link_to "Add Movie", movies_path(id: movie.id), :method => :post%></span>    
   </div> 
 <% end %>

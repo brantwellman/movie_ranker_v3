@@ -1,0 +1,13 @@
+<h2>Your Collection</h2>
+
+  <div>
+    <%= @movie.title %>
+    <%= @movie.release_date %>
+  </div> 
+  <div><%= image_tag "#{Movie::BASE_URL}#{Movie::MEDIUM_LOGO}#{@movie.poster_path}" %></div>
+
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
